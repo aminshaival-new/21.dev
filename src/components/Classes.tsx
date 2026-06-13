@@ -68,7 +68,7 @@ export default function Classes() {
             >
               Classes That <span className="gradient-text">Ignite</span>
             </motion.h2>
-            <p className="text-white/40 text-sm max-w-xs">Secure your spot before they fill up — classes run 6 days a week.</p>
+            <p className="text-white/65 text-sm max-w-xs">Secure your spot before they fill up — classes run 6 days a week.</p>
           </div>
         </div>
 
@@ -102,7 +102,7 @@ export default function Classes() {
                   >
                     {cls.level}
                   </span>
-                  <span className={`text-xs font-bold ${cls.spots <= 4 ? 'text-[#ff6b6b]' : 'text-white/40'}`}>
+                  <span className={`text-xs font-bold ${cls.spots <= 4 ? 'text-[#ff6b6b]' : 'text-white/65'}`}>
                     {cls.spots <= 4 ? `⚡ ${cls.spots} spots left` : `${cls.spots} spots`}
                   </span>
                 </div>
@@ -140,7 +140,7 @@ export default function Classes() {
           viewport={{ once: true }}
           className="mt-12 text-center"
         >
-          <p className="text-white/40 text-sm mb-4">Want to see the full weekly timetable?</p>
+          <p className="text-white/60 text-sm mb-4">Want to see the full weekly timetable?</p>
           <button
             onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
             className="cursor-none text-[#e8ff3a] font-bold text-sm border border-[#e8ff3a]/30 px-6 py-2.5 rounded-full hover:bg-[#e8ff3a] hover:text-black transition-all duration-300"

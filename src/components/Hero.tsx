@@ -9,12 +9,11 @@ export default function Hero() {
   const { scrollYProgress } = useScroll({ target: containerRef, offset: ['start start', 'end start'] });
 
   const imgY = useTransform(scrollYProgress, [0, 1], ['0%', '30%']);
-  const overlayOpacity = useTransform(scrollYProgress, [0, 0.5], [0.55, 0.9]);
+  const overlayOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 1]);
   const contentY = useTransform(scrollYProgress, [0, 1], ['0%', '20%']);
   const contentOpacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
 
   const [wordIndex, setWordIndex] = useState(0);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   const springX = useSpring(0, { stiffness: 50, damping: 20 });
   const springY = useSpring(0, { stiffness: 50, damping: 20 });
@@ -32,7 +31,6 @@ export default function Hero() {
       const y = (e.clientY / window.innerHeight - 0.5) * 20;
       springX.set(x);
       springY.set(y);
-      setMousePos({ x: e.clientX, y: e.clientY });
     };
     window.addEventListener('mousemove', onMove);
     return () => window.removeEventListener('mousemove', onMove);
@@ -107,20 +105,22 @@ export default function Hero() {
             animate={{ y: 0 }}
             transition={{ delay: 0.4, duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
             className="text-[13vw] md:text-[10vw] lg:text-[9vw] font-black leading-none tracking-tighter text-white"
+            style={{ textShadow: '0 4px 32px rgba(0,0,0,0.9), 0 2px 8px rgba(0,0,0,0.8)' }}
           >
             BECOME
           </motion.h1>
         </div>
 
         {/* Rotating word */}
-        <div className="overflow-hidden mb-6 h-[12vw] md:h-[9vw] lg:h-[8vw]">
+        <div className="overflow-hidden mb-6 h-[14vw] md:h-[11vw] lg:h-[10vw]">
           <motion.div
             key={wordIndex}
             initial={{ y: '100%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: '-100%', opacity: 0 }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="text-[13vw] md:text-[10vw] lg:text-[9vw] font-black leading-none tracking-tighter gradient-text glow-text-lime"
+            className="text-[13vw] md:text-[10vw] lg:text-[9vw] font-black leading-none tracking-tighter gradient-text"
+            style={{ filter: 'drop-shadow(0 4px 24px rgba(232,255,58,0.4)) drop-shadow(0 2px 8px rgba(0,0,0,0.9))' }}
           >
             {words[wordIndex]}
           </motion.div>
@@ -134,7 +134,7 @@ export default function Hero() {
           className="flex flex-col md:flex-row items-start md:items-end gap-8 mt-4"
         >
           <div className="max-w-sm">
-            <p className="text-white/60 text-base md:text-lg leading-relaxed font-light">
+            <p className="text-white/90 text-base md:text-lg leading-relaxed font-light" style={{ textShadow: '0 1px 12px rgba(0,0,0,0.8)' }}>
               State-of-the-art facility on Ambli Bopal Road, Ahmedabad.
               Transform your body, elevate your mind.
             </p>

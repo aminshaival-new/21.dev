@@ -72,7 +72,7 @@ export default function StatsBar() {
             <span className="text-4xl md:text-5xl font-black text-white mb-1 gradient-text">
               <Counter value={stat.value} suffix={stat.suffix} />
             </span>
-            <span className="text-white/40 text-sm font-medium uppercase tracking-wider">{stat.label}</span>
+            <span className="text-white/60 text-sm font-medium uppercase tracking-wider">{stat.label}</span>
           </motion.div>
         ))}
       </div>

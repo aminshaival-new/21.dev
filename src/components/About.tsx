@@ -41,7 +41,7 @@ export default function About() {
               className="absolute top-[55%] left-[50%] -translate-x-1/2 -translate-y-1/2 glass border border-[#e8ff3a]/30 rounded-2xl p-4 text-center min-w-[120px] z-10"
             >
               <div className="text-3xl font-black text-[#e8ff3a]">#1</div>
-              <div className="text-white/60 text-xs mt-1 font-medium">Fitness Center<br/>in Ahmedabad</div>
+              <div className="text-white/80 text-xs mt-1 font-medium">Fitness Center<br/>in Ahmedabad</div>
             </motion.div>
           </div>
 
@@ -61,12 +61,12 @@ export default function About() {
                 Where Limits Are<br />
                 <span className="gradient-text">Made to Break</span>
               </h2>
-              <p className="text-white/55 text-lg leading-relaxed mb-6">
+              <p className="text-white/75 text-lg leading-relaxed mb-6">
                 Nestled on Ambli Bopal Road, Ahmedabad, Heeo Fitness is more than a gym —
                 it&apos;s a movement. We combine cutting-edge equipment, world-class trainers,
                 and a community-first culture to push you beyond what you thought possible.
               </p>
-              <p className="text-white/40 text-base leading-relaxed mb-10">
+              <p className="text-white/60 text-base leading-relaxed mb-10">
                 From elite athletes to first-timers, every body that walks through our doors
                 is met with personalised programming and relentless support.
               </p>
@@ -82,7 +82,7 @@ export default function About() {
                     <span className="text-2xl mt-0.5">{item.icon}</span>
                     <div>
                       <div className="text-white font-semibold text-sm">{item.title}</div>
-                      <div className="text-white/40 text-xs mt-0.5">{item.desc}</div>
+                      <div className="text-white/60 text-xs mt-0.5">{item.desc}</div>
                     </div>
                   </div>
                 ))}
@@ -104,7 +104,7 @@ export default function About() {
                 </div>
                 <div>
                   <div className="text-white text-sm font-semibold">5,000+ active members</div>
-                  <div className="flex text-[#e8ff3a] text-xs">★★★★★ <span className="text-white/40 ml-1">4.9 rating</span></div>
+                  <div className="flex text-[#e8ff3a] text-xs">★★★★★ <span className="text-white/60 ml-1">4.9 rating</span></div>
                 </div>
               </div>
             </motion.div>

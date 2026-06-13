@@ -38,7 +38,7 @@ export default function Contact() {
           >
             Start Your <span className="gradient-text">Journey</span>
           </motion.h2>
-          <p className="text-white/40 text-base mt-4 max-w-md mx-auto">
+          <p className="text-white/65 text-base mt-4 max-w-md mx-auto">
             Book a free trial session or ask us anything. Our team responds within 2 hours.
           </p>
         </div>
@@ -120,7 +120,7 @@ export default function Contact() {
                 >
                   Book My Free Trial Session →
                 </motion.button>
-                <p className="text-white/25 text-xs text-center">No commitment. No credit card. Just results.</p>
+                <p className="text-white/50 text-xs text-center">No commitment. No credit card. Just results.</p>
               </form>
             )}
           </motion.div>

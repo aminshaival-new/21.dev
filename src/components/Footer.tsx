@@ -31,7 +31,7 @@ export default function Footer() {
                 HEEO<span className="text-[#e8ff3a]">.</span> FITNESS
               </span>
             </div>
-            <p className="text-white/40 text-sm leading-relaxed max-w-xs mb-6">
+            <p className="text-white/60 text-sm leading-relaxed max-w-xs mb-6">
               Ahmedabad&apos;s most motivated fitness community. Located on Ambli Bopal Road,
               we exist to make you unstoppable.
             </p>
@@ -58,7 +58,7 @@ export default function Footer() {
                       const id = '#' + link.toLowerCase().replace(' us', '').replace('ship', '').replace(' ', '-');
                       document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
                     }}
-                    className="cursor-none text-white/40 hover:text-[#e8ff3a] text-sm transition-colors duration-200 flex items-center gap-2 group"
+                    className="cursor-none text-white/60 hover:text-[#e8ff3a] text-sm transition-colors duration-200 flex items-center gap-2 group"
                   >
                     <span className="w-0 h-px bg-[#e8ff3a] group-hover:w-4 transition-all duration-300" />
                     {link}
@@ -71,7 +71,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="text-white font-bold text-sm mb-5 tracking-widest uppercase">Contact</h4>
-            <ul className="space-y-4 text-sm text-white/40">
+            <ul className="space-y-4 text-sm text-white/65">
               <li>
                 <span className="text-[#e8ff3a]">📍</span>
                 <span className="ml-2">Ambli Bopal Road,<br className="hidden" />Ahmedabad 380058</span>
@@ -94,12 +94,12 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <p className="text-white/25 text-xs">
+          <p className="text-white/50 text-xs">
             © {new Date().getFullYear()} Heeo Fitness. All rights reserved. Ambli Bopal Road, Ahmedabad.
           </p>
           <div className="flex gap-6">
             {['Privacy Policy', 'Terms of Use', 'Refund Policy'].map((item) => (
-              <button key={item} className="cursor-none text-white/25 hover:text-white/50 text-xs transition-colors">
+              <button key={item} className="cursor-none text-white/50 hover:text-white/80 text-xs transition-colors">
                 {item}
               </button>
             ))}

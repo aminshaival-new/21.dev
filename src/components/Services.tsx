@@ -150,7 +150,7 @@ function AccordionItem({ service, isOpen, onToggle }: {
                 transition={{ delay: 0.15 }}
                 className="md:col-span-3"
               >
-                <p className="text-white/55 text-base leading-relaxed mb-6">{service.desc}</p>
+                <p className="text-white/75 text-base leading-relaxed mb-6">{service.desc}</p>
                 <div className="flex gap-6 mb-6 flex-wrap">
                   <div className="flex items-center gap-2 text-sm">
                     <span className="text-[#e8ff3a]">⏱</span>
@@ -221,7 +221,7 @@ export default function Services() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="max-w-sm text-white/40 text-sm leading-relaxed"
+            className="max-w-sm text-white/60 text-sm leading-relaxed"
           >
             Six world-class service pillars, designed to take you from where you are
             to where you want to be — no compromises.

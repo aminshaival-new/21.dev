@@ -54,7 +54,7 @@ export default function Team() {
               Coached by <span className="gradient-text">Champions</span>
             </motion.h2>
           </div>
-          <p className="text-white/40 text-sm max-w-xs leading-relaxed">
+          <p className="text-white/60 text-sm max-w-xs leading-relaxed">
             Every trainer at Heeo is handpicked for their credentials, passion, and ability to bring out the best in you.
           </p>
         </div>

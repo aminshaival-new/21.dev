@@ -126,7 +126,7 @@ export default function Pricing() {
 
               <div className="mb-6">
                 <h3 className={`text-2xl font-black mb-1 ${plan.popular ? 'text-black' : 'text-white'}`}>{plan.name}</h3>
-                <p className={`text-sm ${plan.popular ? 'text-black/60' : 'text-white/40'}`}>{plan.desc}</p>
+                <p className={`text-sm ${plan.popular ? 'text-black/70' : 'text-white/65'}`}>{plan.desc}</p>
               </div>
 
               <div className="mb-8">
@@ -134,10 +134,10 @@ export default function Pricing() {
                   <span className={`text-5xl font-black ${plan.popular ? 'text-black' : 'text-white'}`}>
                     ₹{(annual ? plan.price.yearly : plan.price.monthly).toLocaleString()}
                   </span>
-                  <span className={`text-sm mb-2 ${plan.popular ? 'text-black/60' : 'text-white/40'}`}>/mo</span>
+                  <span className={`text-sm mb-2 ${plan.popular ? 'text-black/70' : 'text-white/65'}`}>/mo</span>
                 </div>
                 {annual && (
-                  <p className={`text-xs mt-1 ${plan.popular ? 'text-black/50' : 'text-white/30'}`}>
+                  <p className={`text-xs mt-1 ${plan.popular ? 'text-black/60' : 'text-white/55'}`}>
                     Billed annually — save ₹{((plan.price.monthly - plan.price.yearly) * 12).toLocaleString()}/yr
                   </p>
                 )}
@@ -174,7 +174,7 @@ export default function Pricing() {
           ))}
         </div>
 
-        <p className="text-center text-white/30 text-sm mt-8">
+        <p className="text-center text-white/55 text-sm mt-8">
           All plans include a 7-day free trial. No credit card required to start.
         </p>
       </div>
